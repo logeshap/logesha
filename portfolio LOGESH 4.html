@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ff0000;
+        }
+
+        header {
+            background: #ff0000;
+            color: #000000;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #000000;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+            color: #000000;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .about, .portfolio, .contact {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .about h3, .portfolio h3, .contact h3 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .portfolio .projects {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 32%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project h4 {
+            padding: 20px;
+            font-size: 1.5em;
+            background-color: #000000;
+            color: #FF0000;
+        }
+
+        .project p {
+            padding: 0 20px 20px;
+            color: #FF0000;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            padding: 15px;
+            background-color: #000000;
+            color: #FF0000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #e74c3c;
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <h1>LOGESH A.P - UI/UX Designer</h1>
+        <p>Designing intuitive, user-centered digital experiences</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Crafting beautiful and functional user experiences</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h3>About Me</h3>
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <p>Hello, LOGESH A.P, I'm a passionate UI/UX designer with a knack for creating intuitive and engaging digital experiences. My goal is to design user interfaces that are not only aesthetically pleasing but also functional and user-friendly. With a background in design and a keen eye for detail, I strive to bring ideas to life through innovative and effective design solutions..</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h3>My Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/" alt="Project 1">
+                <h4>Project 1</h4>
+                <p>A brief description of the project and its objectives.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/" alt="Project 2">
+                <h4>Project 2</h4>
+                <p>A brief description of the project and its objectives.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/" alt="Project 3">
+                <h4>Project 3</h4>
+                <p>A brief description of the project and its objectives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h3>Contact Me</h3>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; LOGESH A.P. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
